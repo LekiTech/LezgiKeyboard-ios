@@ -11,8 +11,19 @@
 		2533E7392932C9F100987759 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2533E7382932C9F100987759 /* ContentView.swift */; };
 		2533E73B2932C9F400987759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2533E73A2932C9F400987759 /* Assets.xcassets */; };
 		2533E73E2932C9F400987759 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2533E73D2932C9F400987759 /* Preview Assets.xcassets */; };
-		2533E74B2932CB0B00987759 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2533E74A2932CB0B00987759 /* KeyboardViewController.swift */; };
+		2533E74B2932CB0B00987759 /* _KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2533E74A2932CB0B00987759 /* _KeyboardViewController.swift */; };
 		2533E74F2932CB0B00987759 /* LezgiChal.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2533E7482932CB0B00987759 /* LezgiChal.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25FF76362932E56800A120F5 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25FF76352932E56800A120F5 /* KeyboardKit */; };
+		25FF76382932E5E800A120F5 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25FF76372932E5E800A120F5 /* KeyboardKit */; };
+		25FF763B2932E67C00A120F5 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 25FF763A2932E67C00A120F5 /* SQLite */; };
+		25FF763D2932E69500A120F5 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 25FF763C2932E69500A120F5 /* SQLite */; };
+		25FF76452932E72400A120F5 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF763E2932E72300A120F5 /* KeyboardView.swift */; };
+		25FF76462932E72400A120F5 /* DemoAutocompleteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF763F2932E72300A120F5 /* DemoAutocompleteProvider.swift */; };
+		25FF76472932E72400A120F5 /* DbRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF76402932E72300A120F5 /* DbRepository.swift */; };
+		25FF76482932E72400A120F5 /* DemoInputSetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF76412932E72300A120F5 /* DemoInputSetProvider.swift */; };
+		25FF76492932E72400A120F5 /* DemoKeyboardActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF76422932E72300A120F5 /* DemoKeyboardActionProvider.swift */; };
+		25FF764A2932E72400A120F5 /* lezgi_words.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 25FF76432932E72400A120F5 /* lezgi_words.sqlite */; };
+		25FF764B2932E72400A120F5 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF76442932E72400A120F5 /* KeyboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +57,23 @@
 		2533E73A2932C9F400987759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2533E73D2932C9F400987759 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2533E7482932CB0B00987759 /* LezgiChal.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LezgiChal.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		2533E74A2932CB0B00987759 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		2533E74A2932CB0B00987759 /* _KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _KeyboardViewController.swift; sourceTree = "<group>"; };
 		2533E74C2932CB0B00987759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255AE7012932D64F00DD0661 /* libGRDB.swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGRDB.swift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		255AE7022932D64F00DD0661 /* libKeyboardKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libKeyboardKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		255AE7052932D66700DD0661 /* libGRDB.swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGRDB.swift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		255AE7062932D66700DD0661 /* libKeyboardKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libKeyboardKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		255AE7092932D93C00DD0661 /* GRDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GRDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		255AE70D2932D93F00DD0661 /* KeyboardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KeyboardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		255AE7152932DE6600DD0661 /* KeyboardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KeyboardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		255AE7192932DE6A00DD0661 /* GRDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GRDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25FF763E2932E72300A120F5 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		25FF763F2932E72300A120F5 /* DemoAutocompleteProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAutocompleteProvider.swift; sourceTree = "<group>"; };
+		25FF76402932E72300A120F5 /* DbRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbRepository.swift; sourceTree = "<group>"; };
+		25FF76412932E72300A120F5 /* DemoInputSetProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoInputSetProvider.swift; sourceTree = "<group>"; };
+		25FF76422932E72300A120F5 /* DemoKeyboardActionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionProvider.swift; sourceTree = "<group>"; };
+		25FF76432932E72400A120F5 /* lezgi_words.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = lezgi_words.sqlite; sourceTree = "<group>"; };
+		25FF76442932E72400A120F5 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FF763B2932E67C00A120F5 /* SQLite in Frameworks */,
+				25FF76362932E56800A120F5 /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FF763D2932E69500A120F5 /* SQLite in Frameworks */,
+				25FF76382932E5E800A120F5 /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +104,7 @@
 				2533E7352932C9F100987759 /* LezgiKeyboard */,
 				2533E7492932CB0B00987759 /* LezgiChal */,
 				2533E7342932C9F100987759 /* Products */,
+				ED78C72686F449787371834B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,10 +139,32 @@
 		2533E7492932CB0B00987759 /* LezgiChal */ = {
 			isa = PBXGroup;
 			children = (
-				2533E74A2932CB0B00987759 /* KeyboardViewController.swift */,
+				25FF76402932E72300A120F5 /* DbRepository.swift */,
+				25FF763F2932E72300A120F5 /* DemoAutocompleteProvider.swift */,
+				25FF76412932E72300A120F5 /* DemoInputSetProvider.swift */,
+				25FF76422932E72300A120F5 /* DemoKeyboardActionProvider.swift */,
+				25FF763E2932E72300A120F5 /* KeyboardView.swift */,
+				25FF76442932E72400A120F5 /* KeyboardViewController.swift */,
+				25FF76432932E72400A120F5 /* lezgi_words.sqlite */,
+				2533E74A2932CB0B00987759 /* _KeyboardViewController.swift */,
 				2533E74C2932CB0B00987759 /* Info.plist */,
 			);
 			path = LezgiChal;
+			sourceTree = "<group>";
+		};
+		ED78C72686F449787371834B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				255AE7192932DE6A00DD0661 /* GRDB.framework */,
+				255AE7152932DE6600DD0661 /* KeyboardKit.framework */,
+				255AE70D2932D93F00DD0661 /* KeyboardKit.framework */,
+				255AE7092932D93C00DD0661 /* GRDB.framework */,
+				255AE7052932D66700DD0661 /* libGRDB.swift.a */,
+				255AE7062932D66700DD0661 /* libKeyboardKit.a */,
+				255AE7012932D64F00DD0661 /* libGRDB.swift.a */,
+				255AE7022932D64F00DD0661 /* libKeyboardKit.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +185,10 @@
 				2533E74E2932CB0B00987759 /* PBXTargetDependency */,
 			);
 			name = LezgiKeyboard;
+			packageProductDependencies = (
+				25FF76352932E56800A120F5 /* KeyboardKit */,
+				25FF763A2932E67C00A120F5 /* SQLite */,
+			);
 			productName = LezgiKeyboard;
 			productReference = 2533E7332932C9F100987759 /* LezgiKeyboard.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +206,10 @@
 			dependencies = (
 			);
 			name = LezgiChal;
+			packageProductDependencies = (
+				25FF76372932E5E800A120F5 /* KeyboardKit */,
+				25FF763C2932E69500A120F5 /* SQLite */,
+			);
 			productName = LezgiChal;
 			productReference = 2533E7482932CB0B00987759 /* LezgiChal.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -180,6 +241,10 @@
 				Base,
 			);
 			mainGroup = 2533E72A2932C9F100987759;
+			packageReferences = (
+				25FF76342932E56800A120F5 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+				25FF76392932E67C00A120F5 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = 2533E7342932C9F100987759 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -204,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FF764A2932E72400A120F5 /* lezgi_words.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2533E74B2932CB0B00987759 /* KeyboardViewController.swift in Sources */,
+				25FF76492932E72400A120F5 /* DemoKeyboardActionProvider.swift in Sources */,
+				2533E74B2932CB0B00987759 /* _KeyboardViewController.swift in Sources */,
+				25FF76462932E72400A120F5 /* DemoAutocompleteProvider.swift in Sources */,
+				25FF76482932E72400A120F5 /* DemoInputSetProvider.swift in Sources */,
+				25FF764B2932E72400A120F5 /* KeyboardViewController.swift in Sources */,
+				25FF76452932E72400A120F5 /* KeyboardView.swift in Sources */,
+				25FF76472932E72400A120F5 /* DbRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +346,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -334,6 +407,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -361,9 +435,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LezgiKeyboard/Preview Content\"";
-				DEVELOPMENT_TEAM = 75547NVWR2;
+				DEVELOPMENT_TEAM = B758XHY469;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Лезгинская Клавиатура";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -375,7 +451,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -392,9 +468,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LezgiKeyboard/Preview Content\"";
-				DEVELOPMENT_TEAM = 75547NVWR2;
+				DEVELOPMENT_TEAM = B758XHY469;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Лезгинская Клавиатура";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -406,7 +484,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -419,7 +497,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 75547NVWR2;
+				DEVELOPMENT_TEAM = B758XHY469;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LezgiChal/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LezgiChal;
@@ -431,7 +510,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard.LezgiChal;
+				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard2.LezgiChal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -445,7 +524,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 75547NVWR2;
+				DEVELOPMENT_TEAM = B758XHY469;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LezgiChal/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LezgiChal;
@@ -457,7 +537,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard.LezgiChal;
+				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard2.LezgiChal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -476,7 +556,7 @@
 				2533E7402932C9F400987759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2533E7412932C9F400987759 /* Build configuration list for PBXNativeTarget "LezgiKeyboard" */ = {
 			isa = XCConfigurationList;
@@ -485,7 +565,7 @@
 				2533E7432932C9F500987759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2533E7532932CB0B00987759 /* Build configuration list for PBXNativeTarget "LezgiChal" */ = {
 			isa = XCConfigurationList;
@@ -494,9 +574,51 @@
 				2533E7522932CB0B00987759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25FF76342932E56800A120F5 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KeyboardKit/KeyboardKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		25FF76392932E67C00A120F5 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25FF76352932E56800A120F5 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25FF76342932E56800A120F5 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+		25FF76372932E5E800A120F5 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25FF76342932E56800A120F5 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+		25FF763A2932E67C00A120F5 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25FF76392932E67C00A120F5 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		25FF763C2932E69500A120F5 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25FF76392932E67C00A120F5 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2533E72B2932C9F100987759 /* Project object */;
 }
