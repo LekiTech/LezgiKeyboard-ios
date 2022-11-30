@@ -10,31 +10,37 @@ import SQLite
 
 class DbRepository {
     
-    static let shared = DbRepository()
+    public static let shared = DbRepository()
     
     var db: Connection?
-    var wordsTable: Table?
+    /// Words table
+    var wordsTable = Table("words")
     let wordColumn = Expression<String>("word")
+//    /// Settings table
+//    var settingsTable = Table("settings")
+//    let keyboardLayoutTypeColumn = Expression<Int64>("layout_type")
     
     // Initializer access level change now
     private init() {
         let dbPath = Bundle.main.path(forResource: "lezgi_words", ofType: "sqlite")!
         do {
             db = try Connection(dbPath, readonly: true)
-            
-            wordsTable = Table("words")
-            try db!.run(wordsTable!.create(ifNotExists: true){ t in
-              t.column(wordColumn, primaryKey: true)
-             })
+            try db!.run(wordsTable.create(ifNotExists: true){ t in
+                t.column(wordColumn, primaryKey: true)
+            })
+//            try db!.run(settingsTable.create(ifNotExists: true){ t in
+//                t.column(Expression<Int64>("id"), primaryKey: true)
+//                t.column(keyboardLayoutTypeColumn)
+//            })
         } catch {
             print("DbRepository error: \(error)")
         }
     }
     
     func findSuggestions(for text: String) -> [String] {
-        if (db != nil && wordsTable != nil) {
+        if (db != nil) {
             do {
-                let mapRowIterator = try db!.prepareRowIterator(wordsTable!.filter(wordColumn.like(text.lowercased() + "%")).limit(3))
+                let mapRowIterator = try db!.prepareRowIterator(wordsTable.filter(wordColumn.like(text.lowercased() + "%")).limit(3))
                 let foundWords = try mapRowIterator.map { $0[wordColumn] }
                 return foundWords
             } catch {

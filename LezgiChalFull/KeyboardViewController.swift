@@ -19,6 +19,10 @@ class KeyboardViewController: KeyboardInputViewController {
         } catch {
             print("KeyboardViewController error: \(error)")
         }
+        keyboardActionHandler = CustomKeyboardActionHandler(
+            inputViewController: self)
+        keyboardLayoutProvider = CustomKeyboardLayoutProvider(
+            inputSetProvider: inputSetProvider)
         super.viewDidLoad()
     }
     

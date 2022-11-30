@@ -11,18 +11,33 @@
 		2533E7392932C9F100987759 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2533E7382932C9F100987759 /* ContentView.swift */; };
 		2533E73B2932C9F400987759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2533E73A2932C9F400987759 /* Assets.xcassets */; };
 		2533E73E2932C9F400987759 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2533E73D2932C9F400987759 /* Preview Assets.xcassets */; };
-		2533E74B2932CB0B00987759 /* _KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2533E74A2932CB0B00987759 /* _KeyboardViewController.swift */; };
 		2533E74F2932CB0B00987759 /* LezgiChal.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2533E7482932CB0B00987759 /* LezgiChal.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25C0E68729365BE2007CB28C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E68629365BE2007CB28C /* KeyboardViewController.swift */; };
+		25C0E68B29365BE2007CB28C /* LezgiChalFull.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 25C0E68429365BE2007CB28C /* LezgiChalFull.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25C0E69D29365CB9007CB28C /* CustomKeyboardCalloutActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E69429365CB8007CB28C /* CustomKeyboardCalloutActionProvider.swift */; };
+		25C0E69E29365CB9007CB28C /* CustomKeyboardLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E69529365CB9007CB28C /* CustomKeyboardLayoutProvider.swift */; };
+		25C0E69F29365CB9007CB28C /* CustomInputSetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E69629365CB9007CB28C /* CustomInputSetProvider.swift */; };
+		25C0E6A229365DDE007CB28C /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25C0E6A129365DDE007CB28C /* KeyboardKit */; };
+		25C0E6A429365DE2007CB28C /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 25C0E6A329365DE2007CB28C /* SQLite */; };
+		25C0E6A629365FA6007CB28C /* lezgi_words.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 25C0E6A529365FA6007CB28C /* lezgi_words.sqlite */; };
+		25C0E6A729365FA6007CB28C /* lezgi_words.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 25C0E6A529365FA6007CB28C /* lezgi_words.sqlite */; };
+		25C0E6A9293671A5007CB28C /* CustomAutocompleteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6A8293671A5007CB28C /* CustomAutocompleteProvider.swift */; };
+		25C0E6AA293671A5007CB28C /* CustomAutocompleteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6A8293671A5007CB28C /* CustomAutocompleteProvider.swift */; };
+		25C0E6AD293673DE007CB28C /* DbRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6AB293673DE007CB28C /* DbRepository.swift */; };
+		25C0E6AE293673DE007CB28C /* DbRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6AB293673DE007CB28C /* DbRepository.swift */; };
+		25C0E6AF293673DE007CB28C /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6AC293673DE007CB28C /* KeyboardView.swift */; };
+		25C0E6B0293673DE007CB28C /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6AC293673DE007CB28C /* KeyboardView.swift */; };
+		25C0E6B129367405007CB28C /* DbRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6AB293673DE007CB28C /* DbRepository.swift */; };
+		25C0E6B32936744D007CB28C /* CustomKeyboardAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6B22936744D007CB28C /* CustomKeyboardAppearance.swift */; };
+		25C0E6B42936744D007CB28C /* CustomKeyboardAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6B22936744D007CB28C /* CustomKeyboardAppearance.swift */; };
+		25C0E6B629367C15007CB28C /* CustomKeyboardActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6B529367C15007CB28C /* CustomKeyboardActionHandler.swift */; };
+		25C0E6BA2936C2A3007CB28C /* SettingsExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6B92936C2A2007CB28C /* SettingsExplanationView.swift */; };
 		25FF76362932E56800A120F5 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25FF76352932E56800A120F5 /* KeyboardKit */; };
 		25FF76382932E5E800A120F5 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25FF76372932E5E800A120F5 /* KeyboardKit */; };
 		25FF763B2932E67C00A120F5 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 25FF763A2932E67C00A120F5 /* SQLite */; };
 		25FF763D2932E69500A120F5 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 25FF763C2932E69500A120F5 /* SQLite */; };
-		25FF76452932E72400A120F5 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF763E2932E72300A120F5 /* KeyboardView.swift */; };
-		25FF76462932E72400A120F5 /* DemoAutocompleteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF763F2932E72300A120F5 /* DemoAutocompleteProvider.swift */; };
-		25FF76472932E72400A120F5 /* DbRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF76402932E72300A120F5 /* DbRepository.swift */; };
-		25FF76482932E72400A120F5 /* DemoInputSetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF76412932E72300A120F5 /* DemoInputSetProvider.swift */; };
-		25FF76492932E72400A120F5 /* DemoKeyboardActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF76422932E72300A120F5 /* DemoKeyboardActionProvider.swift */; };
-		25FF764A2932E72400A120F5 /* lezgi_words.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 25FF76432932E72400A120F5 /* lezgi_words.sqlite */; };
+		25FF76482932E72400A120F5 /* CustomInputSetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF76412932E72300A120F5 /* CustomInputSetProvider.swift */; };
+		25FF76492932E72400A120F5 /* CustomKeyboardCalloutActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF76422932E72300A120F5 /* CustomKeyboardCalloutActionProvider.swift */; };
 		25FF764B2932E72400A120F5 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF76442932E72400A120F5 /* KeyboardViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +49,13 @@
 			remoteGlobalIDString = 2533E7472932CB0B00987759;
 			remoteInfo = LezgiChal;
 		};
+		25C0E68929365BE2007CB28C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2533E72B2932C9F100987759 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25C0E68329365BE2007CB28C;
+			remoteInfo = LezgiChalFull;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +66,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				2533E74F2932CB0B00987759 /* LezgiChal.appex in Embed Foundation Extensions */,
+				25C0E68B29365BE2007CB28C /* LezgiChalFull.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +80,6 @@
 		2533E73A2932C9F400987759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2533E73D2932C9F400987759 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2533E7482932CB0B00987759 /* LezgiChal.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LezgiChal.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		2533E74A2932CB0B00987759 /* _KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _KeyboardViewController.swift; sourceTree = "<group>"; };
 		2533E74C2932CB0B00987759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		255AE7012932D64F00DD0661 /* libGRDB.swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGRDB.swift.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		255AE7022932D64F00DD0661 /* libKeyboardKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libKeyboardKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,12 +89,21 @@
 		255AE70D2932D93F00DD0661 /* KeyboardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KeyboardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		255AE7152932DE6600DD0661 /* KeyboardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KeyboardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		255AE7192932DE6A00DD0661 /* GRDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GRDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25FF763E2932E72300A120F5 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
-		25FF763F2932E72300A120F5 /* DemoAutocompleteProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAutocompleteProvider.swift; sourceTree = "<group>"; };
-		25FF76402932E72300A120F5 /* DbRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbRepository.swift; sourceTree = "<group>"; };
-		25FF76412932E72300A120F5 /* DemoInputSetProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoInputSetProvider.swift; sourceTree = "<group>"; };
-		25FF76422932E72300A120F5 /* DemoKeyboardActionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionProvider.swift; sourceTree = "<group>"; };
-		25FF76432932E72400A120F5 /* lezgi_words.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = lezgi_words.sqlite; sourceTree = "<group>"; };
+		25C0E68429365BE2007CB28C /* LezgiChalFull.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LezgiChalFull.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C0E68629365BE2007CB28C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		25C0E68829365BE2007CB28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25C0E69429365CB8007CB28C /* CustomKeyboardCalloutActionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKeyboardCalloutActionProvider.swift; sourceTree = "<group>"; };
+		25C0E69529365CB9007CB28C /* CustomKeyboardLayoutProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKeyboardLayoutProvider.swift; sourceTree = "<group>"; };
+		25C0E69629365CB9007CB28C /* CustomInputSetProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInputSetProvider.swift; sourceTree = "<group>"; };
+		25C0E6A529365FA6007CB28C /* lezgi_words.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = lezgi_words.sqlite; sourceTree = "<group>"; };
+		25C0E6A8293671A5007CB28C /* CustomAutocompleteProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAutocompleteProvider.swift; sourceTree = "<group>"; };
+		25C0E6AB293673DE007CB28C /* DbRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbRepository.swift; sourceTree = "<group>"; };
+		25C0E6AC293673DE007CB28C /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		25C0E6B22936744D007CB28C /* CustomKeyboardAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKeyboardAppearance.swift; sourceTree = "<group>"; };
+		25C0E6B529367C15007CB28C /* CustomKeyboardActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboardActionHandler.swift; sourceTree = "<group>"; };
+		25C0E6B92936C2A2007CB28C /* SettingsExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsExplanationView.swift; sourceTree = "<group>"; };
+		25FF76412932E72300A120F5 /* CustomInputSetProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInputSetProvider.swift; sourceTree = "<group>"; };
+		25FF76422932E72300A120F5 /* CustomKeyboardCalloutActionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKeyboardCalloutActionProvider.swift; sourceTree = "<group>"; };
 		25FF76442932E72400A120F5 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,14 +126,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25C0E68129365BE2007CB28C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C0E6A429365DE2007CB28C /* SQLite in Frameworks */,
+				25C0E6A229365DDE007CB28C /* KeyboardKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2533E72A2932C9F100987759 = {
 			isa = PBXGroup;
 			children = (
+				25C0E6B22936744D007CB28C /* CustomKeyboardAppearance.swift */,
+				25C0E6AB293673DE007CB28C /* DbRepository.swift */,
+				25C0E6AC293673DE007CB28C /* KeyboardView.swift */,
+				25C0E6A8293671A5007CB28C /* CustomAutocompleteProvider.swift */,
+				25C0E6A529365FA6007CB28C /* lezgi_words.sqlite */,
 				2533E7352932C9F100987759 /* LezgiKeyboard */,
 				2533E7492932CB0B00987759 /* LezgiChal */,
+				25C0E68529365BE2007CB28C /* LezgiChalFull */,
 				2533E7342932C9F100987759 /* Products */,
 				ED78C72686F449787371834B /* Frameworks */,
 			);
@@ -113,6 +159,7 @@
 			children = (
 				2533E7332932C9F100987759 /* LezgiKeyboard.app */,
 				2533E7482932CB0B00987759 /* LezgiChal.appex */,
+				25C0E68429365BE2007CB28C /* LezgiChalFull.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				2533E7362932C9F100987759 /* LezgiKeyboardApp.swift */,
+				25C0E6B92936C2A2007CB28C /* SettingsExplanationView.swift */,
 				2533E7382932C9F100987759 /* ContentView.swift */,
 				2533E73A2932C9F400987759 /* Assets.xcassets */,
 				2533E73C2932C9F400987759 /* Preview Content */,
@@ -139,17 +187,25 @@
 		2533E7492932CB0B00987759 /* LezgiChal */ = {
 			isa = PBXGroup;
 			children = (
-				25FF76402932E72300A120F5 /* DbRepository.swift */,
-				25FF763F2932E72300A120F5 /* DemoAutocompleteProvider.swift */,
-				25FF76412932E72300A120F5 /* DemoInputSetProvider.swift */,
-				25FF76422932E72300A120F5 /* DemoKeyboardActionProvider.swift */,
-				25FF763E2932E72300A120F5 /* KeyboardView.swift */,
+				25FF76412932E72300A120F5 /* CustomInputSetProvider.swift */,
+				25FF76422932E72300A120F5 /* CustomKeyboardCalloutActionProvider.swift */,
 				25FF76442932E72400A120F5 /* KeyboardViewController.swift */,
-				25FF76432932E72400A120F5 /* lezgi_words.sqlite */,
-				2533E74A2932CB0B00987759 /* _KeyboardViewController.swift */,
 				2533E74C2932CB0B00987759 /* Info.plist */,
 			);
 			path = LezgiChal;
+			sourceTree = "<group>";
+		};
+		25C0E68529365BE2007CB28C /* LezgiChalFull */ = {
+			isa = PBXGroup;
+			children = (
+				25C0E69429365CB8007CB28C /* CustomKeyboardCalloutActionProvider.swift */,
+				25C0E69529365CB9007CB28C /* CustomKeyboardLayoutProvider.swift */,
+				25C0E69629365CB9007CB28C /* CustomInputSetProvider.swift */,
+				25C0E68629365BE2007CB28C /* KeyboardViewController.swift */,
+				25C0E68829365BE2007CB28C /* Info.plist */,
+				25C0E6B529367C15007CB28C /* CustomKeyboardActionHandler.swift */,
+			);
+			path = LezgiChalFull;
 			sourceTree = "<group>";
 		};
 		ED78C72686F449787371834B /* Frameworks */ = {
@@ -183,6 +239,7 @@
 			);
 			dependencies = (
 				2533E74E2932CB0B00987759 /* PBXTargetDependency */,
+				25C0E68A29365BE2007CB28C /* PBXTargetDependency */,
 			);
 			name = LezgiKeyboard;
 			packageProductDependencies = (
@@ -214,6 +271,27 @@
 			productReference = 2533E7482932CB0B00987759 /* LezgiChal.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		25C0E68329365BE2007CB28C /* LezgiChalFull */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25C0E68E29365BE2007CB28C /* Build configuration list for PBXNativeTarget "LezgiChalFull" */;
+			buildPhases = (
+				25C0E68029365BE2007CB28C /* Sources */,
+				25C0E68129365BE2007CB28C /* Frameworks */,
+				25C0E68229365BE2007CB28C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LezgiChalFull;
+			packageProductDependencies = (
+				25C0E6A129365DDE007CB28C /* KeyboardKit */,
+				25C0E6A329365DE2007CB28C /* SQLite */,
+			);
+			productName = LezgiChalFull;
+			productReference = 25C0E68429365BE2007CB28C /* LezgiChalFull.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -228,6 +306,9 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					2533E7472932CB0B00987759 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					25C0E68329365BE2007CB28C = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -251,6 +332,7 @@
 			targets = (
 				2533E7322932C9F100987759 /* LezgiKeyboard */,
 				2533E7472932CB0B00987759 /* LezgiChal */,
+				25C0E68329365BE2007CB28C /* LezgiChalFull */,
 			);
 		};
 /* End PBXProject section */
@@ -269,7 +351,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25FF764A2932E72400A120F5 /* lezgi_words.sqlite in Resources */,
+				25C0E6A629365FA6007CB28C /* lezgi_words.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C0E68229365BE2007CB28C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C0E6A729365FA6007CB28C /* lezgi_words.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +370,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C0E6B129367405007CB28C /* DbRepository.swift in Sources */,
 				2533E7392932C9F100987759 /* ContentView.swift in Sources */,
 				2533E7372932C9F100987759 /* LezgiKeyboardApp.swift in Sources */,
+				25C0E6BA2936C2A3007CB28C /* SettingsExplanationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +381,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25FF76492932E72400A120F5 /* DemoKeyboardActionProvider.swift in Sources */,
-				2533E74B2932CB0B00987759 /* _KeyboardViewController.swift in Sources */,
-				25FF76462932E72400A120F5 /* DemoAutocompleteProvider.swift in Sources */,
-				25FF76482932E72400A120F5 /* DemoInputSetProvider.swift in Sources */,
+				25C0E6B32936744D007CB28C /* CustomKeyboardAppearance.swift in Sources */,
+				25FF76492932E72400A120F5 /* CustomKeyboardCalloutActionProvider.swift in Sources */,
+				25C0E6A9293671A5007CB28C /* CustomAutocompleteProvider.swift in Sources */,
+				25C0E6AF293673DE007CB28C /* KeyboardView.swift in Sources */,
+				25FF76482932E72400A120F5 /* CustomInputSetProvider.swift in Sources */,
 				25FF764B2932E72400A120F5 /* KeyboardViewController.swift in Sources */,
-				25FF76452932E72400A120F5 /* KeyboardView.swift in Sources */,
-				25FF76472932E72400A120F5 /* DbRepository.swift in Sources */,
+				25C0E6AD293673DE007CB28C /* DbRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25C0E68029365BE2007CB28C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C0E6B629367C15007CB28C /* CustomKeyboardActionHandler.swift in Sources */,
+				25C0E6AE293673DE007CB28C /* DbRepository.swift in Sources */,
+				25C0E6B0293673DE007CB28C /* KeyboardView.swift in Sources */,
+				25C0E69E29365CB9007CB28C /* CustomKeyboardLayoutProvider.swift in Sources */,
+				25C0E69F29365CB9007CB28C /* CustomInputSetProvider.swift in Sources */,
+				25C0E68729365BE2007CB28C /* KeyboardViewController.swift in Sources */,
+				25C0E6B42936744D007CB28C /* CustomKeyboardAppearance.swift in Sources */,
+				25C0E6AA293671A5007CB28C /* CustomAutocompleteProvider.swift in Sources */,
+				25C0E69D29365CB9007CB28C /* CustomKeyboardCalloutActionProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +414,11 @@
 			isa = PBXTargetDependency;
 			target = 2533E7472932CB0B00987759 /* LezgiChal */;
 			targetProxy = 2533E74D2932CB0B00987759 /* PBXContainerItemProxy */;
+		};
+		25C0E68A29365BE2007CB28C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25C0E68329365BE2007CB28C /* LezgiChalFull */;
+			targetProxy = 25C0E68929365BE2007CB28C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -432,10 +545,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"LezgiKeyboard/Preview Content\"";
-				DEVELOPMENT_TEAM = B758XHY469;
+				DEVELOPMENT_TEAM = 75547NVWR2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Лезгинская Клавиатура";
@@ -451,8 +565,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard2;
+				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,10 +580,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"LezgiKeyboard/Preview Content\"";
-				DEVELOPMENT_TEAM = B758XHY469;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X24PSK3UG4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Лезгинская Клавиатура";
@@ -484,8 +601,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vadivian.LezgiKeyboard.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = lezgi_keyboard_prod;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -496,12 +615,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B758XHY469;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 75547NVWR2;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LezgiChal/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LezgiChal;
+				INFOPLIST_KEY_CFBundleDisplayName = "Лезги чIал";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -510,7 +629,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard2.LezgiChal;
+				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard.LezgiChal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -522,13 +641,15 @@
 		2533E7522932CB0B00987759 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B758XHY469;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X24PSK3UG4;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LezgiChal/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LezgiChal;
+				INFOPLIST_KEY_CFBundleDisplayName = "Лезги чIал";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -537,8 +658,67 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard2.LezgiChal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vadivian.LezgiKeyboard.app.LezgiChal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = lezgi_keyboard_prod;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		25C0E68C29365BE2007CB28C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 75547NVWR2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LezgiChalFull/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Лезги чIал: Вири гьарфар";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.lekitech.LezgiKeyboard.LezgiChalFull;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25C0E68D29365BE2007CB28C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X24PSK3UG4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LezgiChalFull/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Лезги чIал: Вири гьарфар";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vadivian.LezgiKeyboard.app.LezgiChalFull;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = lezgi_keyboard_prod;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -576,6 +756,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		25C0E68E29365BE2007CB28C /* Build configuration list for PBXNativeTarget "LezgiChalFull" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C0E68C29365BE2007CB28C /* Debug */,
+				25C0E68D29365BE2007CB28C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -598,6 +787,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		25C0E6A129365DDE007CB28C /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25FF76342932E56800A120F5 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+		25C0E6A329365DE2007CB28C /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25FF76392932E67C00A120F5 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
 		25FF76352932E56800A120F5 /* KeyboardKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 25FF76342932E56800A120F5 /* XCRemoteSwiftPackageReference "KeyboardKit" */;

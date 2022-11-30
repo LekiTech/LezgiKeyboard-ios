@@ -21,9 +21,9 @@ struct KeyboardView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            if autocompleteContext.suggestions.count > 0 {
+//            if autocompleteContext.suggestions.count > 0 {
                 autocompleteToolbar
-            }
+//            }
             SystemKeyboard()
         }
     }

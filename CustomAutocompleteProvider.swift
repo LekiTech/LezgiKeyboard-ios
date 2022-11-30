@@ -8,7 +8,7 @@
 import Foundation
 import KeyboardKit
 
-class DemoAutocompleteProvider: AutocompleteProvider {
+class CustomAutocompleteProvider: AutocompleteProvider {
 
     init(match: String = "match") {
         self.match = match
@@ -31,25 +31,33 @@ class DemoAutocompleteProvider: AutocompleteProvider {
     func unlearnWord(_ word: String) {}
     
     func autocompleteSuggestions(for text: String, completion: AutocompleteCompletion) {
-        guard text.count > 0 else { return completion(.success([])) }
+        guard text.count > 0 else {
+            return completion(.success([]))
+//                StandardAutocompleteSuggestion(text: "Зи"),
+//                StandardAutocompleteSuggestion(text: "Ви"),
+//                StandardAutocompleteSuggestion(text: "Зун"),
+//                StandardAutocompleteSuggestion(text: "Вун")
+        }
         if text == match {
             completion(.success(matchSuggestions()))
         } else {
-            completion(.success(fakeSuggestions(for: text)))
+            completion(.success(suggestions(for: text)))
         }
     }
 }
 
-private extension DemoAutocompleteProvider {
+private extension CustomAutocompleteProvider {
     
-    func fakeSuggestions(for text: String) -> [AutocompleteSuggestion] {
+    func suggestions(for text: String) -> [AutocompleteSuggestion] {
+        let isCap = String(text.prefix(1)).isUppercased
         let suggestions = DbRepository.shared.findSuggestions(for: text)
         return suggestions.map { word in
-            StandardAutocompleteSuggestion(text: word)
+            let result = (isCap ? word.prefix(1).uppercased() : word.prefix(1).lowercased()) + word.dropFirst()
+            return StandardAutocompleteSuggestion(text: result)
         }
     }
     
-    func fakeSuggestion(_ text: String, _ subtitle: String? = nil) -> AutocompleteSuggestion {
+    func suggestion(_ text: String, _ subtitle: String? = nil) -> AutocompleteSuggestion {
         StandardAutocompleteSuggestion(text: text, subtitle: subtitle)
     }
 
