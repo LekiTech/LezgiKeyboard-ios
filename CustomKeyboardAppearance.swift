@@ -20,6 +20,8 @@ class CustomKeyboardAppearance: StandardKeyboardAppearance {
             return "Хьурай"
         case .return:
             return "⮐"
+        case .escape:
+            return "esc"
         case .primary(.search):
             return "Жугъурун"
         case .space:
