@@ -13,34 +13,37 @@ class CustomInputSetProvider: InputSetProvider {
 
     var alphabeticInputSet: AlphabeticInputSet {
         let result: AlphabeticInputSet
+        let customFirstRow = ["цI", "кь", "кI", "къ", "пI", "гъ", "гь", "хь", "хъ"]
         let firstRow = ["й", "ц", "у", "к", "е", "н", "г", "ш", "тI", "з", "х"]
         let secondRow = ["ф", "чI","в","а","п","р","о","л","д","ж","э"]
         let thirdRowPhone = ["я", "ч", "с", "м", "и", "т", "ь", "б", "уь"]
         let thirdRowPad = ["я", "ч", "с", "м", "и", "т", "ь", "б", "уь", ",", "."]
         result = AlphabeticInputSet(rows: [
-            .init(firstRow.map({ myChar in
-                InputSetItem.init(neutral: myChar, uppercased: myChar.prefix(1).capitalized + myChar.dropFirst(), lowercased: myChar)
-            })),
-            .init(secondRow.map({ myChar in
-                InputSetItem.init(neutral: myChar, uppercased: myChar.prefix(1).capitalized + myChar.dropFirst(), lowercased: myChar)
-            })),
-            .init(thirdRowPhone.map({ myChar in
-                InputSetItem.init(neutral: myChar, uppercased: myChar.prefix(1).capitalized + myChar.dropFirst(), lowercased: myChar)
-            })),
-            // TODO: fix something for thirdRowPad row
-//            .init(
-//                phoneLowercased: "ячсмитьб",
-//                phoneUppercased: "ЯЧСМИТЬБ",
-//                padLowercased: "ячсмитьб,.",
-//                padUppercased: "ЯЧСМИТЬБ,.")
+            .init(customFirstRow.map({ myChar in mapStringToInputSetItem(myChar: myChar) })),
+            .init(firstRow.map({ myChar in mapStringToInputSetItem(myChar: myChar) })),
+            .init(secondRow.map({ myChar in mapStringToInputSetItem(myChar: myChar) })),
+            .init(
+                phoneLowercased: thirdRowPhone,
+                phoneUppercased: thirdRowPhone.map({ myChar in capitalizeCorrectly(myChar: myChar) }),
+                padLowercased: thirdRowPad,
+                padUppercased: thirdRowPad.map({ myChar in capitalizeCorrectly(myChar: myChar) })
+            )
         ])
         return result
+    }
+    
+    func capitalizeCorrectly(myChar: String) -> String {
+        return myChar.prefix(1).capitalized + myChar.dropFirst()
+    }
+    
+    func mapStringToInputSetItem(myChar: String) -> InputSetItem {
+        return InputSetItem.init(neutral: myChar, uppercased: capitalizeCorrectly(myChar: myChar), lowercased: myChar)
     }
     
     var numericInputSet: NumericInputSet {
         baseProvider.numericInputSet
     }
-    
+
     var symbolicInputSet: SymbolicInputSet {
         baseProvider.symbolicInputSet
     }

@@ -32,6 +32,8 @@
 		25C0E6B42936744D007CB28C /* CustomKeyboardAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6B22936744D007CB28C /* CustomKeyboardAppearance.swift */; };
 		25C0E6B629367C15007CB28C /* CustomKeyboardActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6B529367C15007CB28C /* CustomKeyboardActionHandler.swift */; };
 		25C0E6BA2936C2A3007CB28C /* SettingsExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6B92936C2A2007CB28C /* SettingsExplanationView.swift */; };
+		25C0E6BD29380527007CB28C /* CustomiPadKeyboardLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6BC29380527007CB28C /* CustomiPadKeyboardLayoutProvider.swift */; };
+		25C0E6BF293805D8007CB28C /* CustomiPhoneKeyboardLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C0E6BE293805D8007CB28C /* CustomiPhoneKeyboardLayoutProvider.swift */; };
 		25FF76362932E56800A120F5 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25FF76352932E56800A120F5 /* KeyboardKit */; };
 		25FF76382932E5E800A120F5 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25FF76372932E5E800A120F5 /* KeyboardKit */; };
 		25FF763B2932E67C00A120F5 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 25FF763A2932E67C00A120F5 /* SQLite */; };
@@ -102,6 +104,8 @@
 		25C0E6B22936744D007CB28C /* CustomKeyboardAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKeyboardAppearance.swift; sourceTree = "<group>"; };
 		25C0E6B529367C15007CB28C /* CustomKeyboardActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboardActionHandler.swift; sourceTree = "<group>"; };
 		25C0E6B92936C2A2007CB28C /* SettingsExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsExplanationView.swift; sourceTree = "<group>"; };
+		25C0E6BC29380527007CB28C /* CustomiPadKeyboardLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomiPadKeyboardLayoutProvider.swift; sourceTree = "<group>"; };
+		25C0E6BE293805D8007CB28C /* CustomiPhoneKeyboardLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomiPhoneKeyboardLayoutProvider.swift; sourceTree = "<group>"; };
 		25FF76412932E72300A120F5 /* CustomInputSetProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInputSetProvider.swift; sourceTree = "<group>"; };
 		25FF76422932E72300A120F5 /* CustomKeyboardCalloutActionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKeyboardCalloutActionProvider.swift; sourceTree = "<group>"; };
 		25FF76442932E72400A120F5 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 		25C0E68529365BE2007CB28C /* LezgiChalFull */ = {
 			isa = PBXGroup;
 			children = (
+				25C0E6BB293804E5007CB28C /* OverridenDeviceLayoutProviders */,
 				25C0E69429365CB8007CB28C /* CustomKeyboardCalloutActionProvider.swift */,
 				25C0E69529365CB9007CB28C /* CustomKeyboardLayoutProvider.swift */,
 				25C0E69629365CB9007CB28C /* CustomInputSetProvider.swift */,
@@ -206,6 +211,15 @@
 				25C0E6B529367C15007CB28C /* CustomKeyboardActionHandler.swift */,
 			);
 			path = LezgiChalFull;
+			sourceTree = "<group>";
+		};
+		25C0E6BB293804E5007CB28C /* OverridenDeviceLayoutProviders */ = {
+			isa = PBXGroup;
+			children = (
+				25C0E6BC29380527007CB28C /* CustomiPadKeyboardLayoutProvider.swift */,
+				25C0E6BE293805D8007CB28C /* CustomiPhoneKeyboardLayoutProvider.swift */,
+			);
+			path = OverridenDeviceLayoutProviders;
 			sourceTree = "<group>";
 		};
 		ED78C72686F449787371834B /* Frameworks */ = {
@@ -397,6 +411,8 @@
 			files = (
 				25C0E6B629367C15007CB28C /* CustomKeyboardActionHandler.swift in Sources */,
 				25C0E6AE293673DE007CB28C /* DbRepository.swift in Sources */,
+				25C0E6BF293805D8007CB28C /* CustomiPhoneKeyboardLayoutProvider.swift in Sources */,
+				25C0E6BD29380527007CB28C /* CustomiPadKeyboardLayoutProvider.swift in Sources */,
 				25C0E6B0293673DE007CB28C /* KeyboardView.swift in Sources */,
 				25C0E69E29365CB9007CB28C /* CustomKeyboardLayoutProvider.swift in Sources */,
 				25C0E69F29365CB9007CB28C /* CustomInputSetProvider.swift in Sources */,
@@ -547,7 +563,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"LezgiKeyboard/Preview Content\"";
 				DEVELOPMENT_TEAM = 75547NVWR2;
 				ENABLE_PREVIEWS = YES;
@@ -582,7 +598,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"LezgiKeyboard/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X24PSK3UG4;
@@ -615,7 +631,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 75547NVWR2;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -643,7 +659,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X24PSK3UG4;
 				EXCLUDED_ARCHS = "";
@@ -674,7 +690,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 75547NVWR2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LezgiChalFull/Info.plist;
@@ -701,7 +717,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X24PSK3UG4;
 				GENERATE_INFOPLIST_FILE = YES;
