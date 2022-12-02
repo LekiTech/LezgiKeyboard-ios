@@ -12,6 +12,13 @@ struct ContentView: View {
     @State var isFullKeyboard = false
     @State var testInput: String = ""
     
+    func getImageForDevice(name: String) -> String {
+        if (UIDevice.current.userInterfaceIdiom == .pad) {
+            return "ipad_" + name
+        }
+        return name
+    }
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -33,7 +40,7 @@ struct ContentView: View {
                     isFullKeyboard = true
                     withAnimation { showingSheet.toggle() }
                 } label: {
-                    Image("keyboard_viri_harfar")
+                    Image(getImageForDevice(name: "keyboard_viri_harfar"))
                         .renderingMode(.original)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -50,7 +57,7 @@ struct ContentView: View {
                     isFullKeyboard = false
                     withAnimation { showingSheet.toggle() }
                 } label: {
-                    Image("keyboard")
+                    Image(getImageForDevice(name: "keyboard"))
                         .renderingMode(.original)
                         .resizable()
                         .aspectRatio(contentMode: .fit)

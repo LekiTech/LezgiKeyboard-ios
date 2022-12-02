@@ -4,10 +4,10 @@
 Это приложение предназначеное на iOS позволяет пользователю добавить лезгинскую клавиатуру на свой телефон
 
 Лезгинская клавиатура поддерживает подсказки/автокоррекцию лезгинских слов и приходит в 2-ух раскладках:
-|Лезги чIал | Лезги чIал: Вири гьарфар |
-| ---- | ---- |
-|![](./res/keyboard.png) | ![](./res/keyboard_viri_harfar.png) |
-
+|        |Лезги чIал | Лезги чIал: Вири гьарфар |
+| ------ | ---- | ---- |
+| iPhone |![](./res/keyboard.png) | ![](./res/keyboard_viri_harfar.png) |
+| iPad   |![](./res/ipad_keyboard.png) | ![](./res/ipad_keyboard_viri_harfar.png) |
 ## Исходный код
 
 Для имплементации клавиатуры была использована библиотека [KeyboardKit Swift Library](https://github.com/KeyboardKit/KeyboardKit), их документацию можно найти здесь [KeyboardKit | Documentation](https://keyboardkit.github.io/KeyboardKit/documentation/keyboardkit/)
@@ -28,3 +28,7 @@
   - `KeyboardView.swift` - подправка внешнего вида клавиатуры для поддержки автокоррекции
   - `DbRepository.swift` - репозиторий(repository pattern) к локальной базе данных `lezgi_words.sqlite`
   - `lezgi_words.sqlite` локальная база данных содержащая слова лезгинского языка из словаря Бабаханова М.Б.
+
+## Credits
+
+Отдельная благодарность Артуру Магомедову за разработку обеих раскладок лезгинской клавиатуры, и Рашиду Гасратову за помощь с переводами

@@ -12,6 +12,13 @@ struct SettingsExplanationView: View {
     @Environment(\.dismiss) var dismiss
     @Binding var isFullKeyboard: Bool
     
+    func getImageForDevice(name: String) -> String {
+        if (UIDevice.current.userInterfaceIdiom == .pad) {
+            return "ipad_" + name
+        }
+        return name
+    }
+    
     var body: some View {
         return ZStack {
             VStack {
@@ -46,7 +53,7 @@ struct SettingsExplanationView: View {
                             Text("1. Выберите «Основные» > «Клавиатура»")
                                 .padding(.bottom)
                                 .padding(.horizontal, 25)
-                            Image("menu_keyboard_1_rus")
+                            Image(getImageForDevice(name: "menu_keyboard_1"))
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .border(Color.gray, width: 3.0)
@@ -55,7 +62,7 @@ struct SettingsExplanationView: View {
                             Text("2. Коснитесь «Клавиатуры»")
                                 .padding(.vertical)
                                 .padding(.horizontal, 25)
-                            Image("menu_keyboard_2_rus")
+                            Image(getImageForDevice(name: "menu_keyboard_2"))
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .border(Color.gray, width: 3.0)
@@ -65,7 +72,7 @@ struct SettingsExplanationView: View {
                                 .padding(.vertical)
                                 .padding(.horizontal, 25)
                             
-                            Image("menu_keyboard_3_rus")
+                            Image(getImageForDevice(name: "menu_keyboard_3"))
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .border(Color.gray, width: 3.0)
@@ -74,7 +81,7 @@ struct SettingsExplanationView: View {
                             Text("4. Выберите клавиатуру с названием «Лезгинская Клавиатура»")
                                 .padding(.vertical)
                                 .padding(.horizontal, 25)
-                            Image("menu_keyboard_4_rus")
+                            Image(getImageForDevice(name: "menu_keyboard_4"))
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .border(Color.gray, width: 3.0)
@@ -84,17 +91,25 @@ struct SettingsExplanationView: View {
                                 Text("5. Коснитесь «Лезги чIал: Вири гьарфар»")
                                     .padding(.vertical)
                                     .padding(.horizontal, 25)
-                                Image("menu_keyboard_5_1_rus")
+                                Image(getImageForDevice(name: "menu_keyboard_5_1"))
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .border(Color.gray, width: 3.0)
+                                Text("""
+Буквы "Ю", "Ы" и "Щ" доступны в этой раскладке как 2-ой вариант:
+- чтобы напечатать "Ю" надо нажать и удерживать кнопку "Уь"
+- чтобы напечатать "Ы" надо нажать и удерживать кнопку "Ь"
+- чтобы напечатать "Ш" надо нажать и удерживать кнопку "Щ
+""")
+                                .padding(.vertical)
+                                .padding(.horizontal, 25)
                             }
                         } else {
                             Group {
                                 Text("5. Коснитесь «Лезги чIал»")
                                     .padding(.vertical)
                                     .padding(.horizontal, 25)
-                                Image("menu_keyboard_5_2_rus")
+                                Image(getImageForDevice(name: "menu_keyboard_5_2"))
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .border(Color.gray, width: 3.0)
