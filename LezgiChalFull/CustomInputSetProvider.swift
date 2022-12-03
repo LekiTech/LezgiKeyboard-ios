@@ -28,8 +28,8 @@ class CustomInputSetProvider: InputSetProvider {
         let firstRow = ["й", "ц", "у", "к", "е", "н", "г", "ш", "тI", "з", "х"]
         let firstRowPad = ["й", "ц", "у", "к", "е", "н", "г", "ш", "тI", "з", "х", ";", "'"]
         let secondRow = ["ф", "чI","в","а","п","р","о","л","д","ж","э"]
-        let thirdRowPhone = ["я", "ч", "с", "м", "и", "т", "ь", "б", "уь"]
-        let thirdRowPad = ["я", "ч", "с", "м", "и", "т", "ь", "б", "уь", ",", ".", "/"]
+        let thirdRowPhone = ["я", "ч", "с", "м", "и", "т", "ъ", "б", "уь"]
+        let thirdRowPad = ["я", "ч", "с", "м", "и", "т", "ъ", "б", "уь", ",", ".", "/"]
         result = AlphabeticInputSet(rows: [
 //            .init(customFirstRow.map({ myChar in mapStringToInputSetItem(myChar: myChar) })),
             .init(

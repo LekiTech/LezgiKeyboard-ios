@@ -38,6 +38,7 @@ class CustomKeyboardActionHandler: StandardKeyboardActionHandler {
     
     override func handle(_ gesture: KeyboardGesture, on action: KeyboardAction) {
         // Customize the action handling if needed
+//        UINotificationFeedbackGenerator().notificationOccurred(.success)s
         if (gesture == .tap && action == .backspace && isEndingOnCombinedLetter()) {
             textDocumentProxy.deleteBackward(times: 2)
         } else {

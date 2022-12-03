@@ -21,8 +21,8 @@ class CustomKeyboardCalloutActionProvider: BaseCalloutActionProvider {
             returnString = isLow ? "щ" : "Щ"
             break
             //ь ы Ы
-        case "ь":
-            returnString = isLow ? "ы" : "Ы"
+        case "ъ":
+            returnString = isLow ? "ыь" : "ЫЬ"
             break
         default:
             returnString = ""
